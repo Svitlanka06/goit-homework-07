@@ -1,0 +1,128 @@
+@media screen and (max-width: 1157px) {
+  .skills {
+    display: none;
+  }
+  .description-item::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+  .address-list {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 428px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container-team {
+    width: 294px;
+  }
+
+  .description-title {
+    text-align: center;
+  }
+  .page-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container-team {
+    width: 582px;
+  }
+  .description-title {
+    text-align: left;
+  }
+
+  .description-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .about-item {
+    width: calc((100% - 2 * 24px) / 2);
+  }
+  .about {
+    background-color: var(--light-color);
+    padding-bottom: 96px;
+    padding-top: 96px;
+  }
+
+  .container-customers {
+    width: 582px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .customer-item {
+    width: 168px;
+    height: 88px;
+    flex-basis: calc((100% - 3 * 24px) / 3);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+  .container-team {
+    width: 1200px;
+  }
+  .description {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .description-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+  .description-item::before {
+    display: block;
+    content: "";
+    height: 112px;
+    background-color: var(--light-color);
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .description-title {
+    text-align: left;
+  }
+  .about-item {
+    flex-wrap: wrap;
+    width: calc((100% - 3 * 24px) / 4);
+  }
+  .customer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .customer-item {
+    width: 168px;
+    height: 88px;
+    flex-basis: calc((100% - 24px) / 6);
+  }
+  .mobile-menu-open {
+    display: none;
+  }
+}
