@@ -64,17 +64,17 @@
     padding-top: 96px;
   }
 
-  .container-customers {
+  /* .container-customers {
     width: 582px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
-    margin-right: auto;
-  }
+    margin-right: auto; */
+
   .customer-item {
-    width: 168px;
+    max-width: 168px;
     height: 88px;
-    flex-basis: calc((100% - 3 * 24px) / 3);
+    flex-basis: calc((100% - 24px) / 3);
   }
 }
 
@@ -118,7 +118,7 @@
     align-items: center;
   }
   .customer-item {
-    width: 168px;
+    max-width: 168px;
     height: 88px;
     flex-basis: calc((100% - 24px) / 6);
   }
