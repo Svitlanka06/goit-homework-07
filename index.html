@@ -25,7 +25,7 @@
             <nav class="nav-header">
                 <a class="header-logo link " href="./index.html">Web<span class="logo-studio">Studio</span>
                 </a>
-                <button type="button" class="mobile-menu-open">
+                <button type="button" class="mobile-menu-open" data-menu-open>
                     <svg width="32" height="32" class="mobile-menu-open-icon">
                         <use href="./images/icons.svg#icon-mobile-menu-open"></use>
                     </svg>
@@ -53,9 +53,9 @@
                     </li>
                 </ul>
             </address>
-            <div class="mobile-menu-nav is-hidden">
+            <div class="mobile-menu-nav" data-menu>
                 <div class="mobile-container">
-                    <button type="button" class="mobile-close-btn">
+                    <button type="button" class="mobile-close-btn" data-menu-close>
                         <svg class="mobile-close-icon" width="8" height="8">
                             <use href="./images/icons.svg#icon-close1"></use>
                         </svg>
@@ -175,13 +175,16 @@
                 <h2 class="title-skills">What are we doing</h2>
                 <ul class="skills-list list">
                     <li class="skills-item list">
-                        <img src="./images/statistics.jpg" alt="statistics" width="360" height="300">
+                        <img srcset="./images/statistics.jpg 1x, ./images/statistics-2x.jpg 2x"
+                            src="./images/statistics.jpg" alt="statistics" width="360" height="300">
                     </li>
                     <li class="skills-item list">
-                        <img src="./images/messendger.jpg" alt="messendger" width="360" height="300">
+                        <img srcset="./images/messendger.jpg 1x, ./images/messendger-2x.jpg 2x"
+                            src="./images/messendger.jpg" alt="messendger" width="360" height="300">
                     </li>
                     <li class="skills-item list">
-                        <img src="./images/phone.jpg" alt="phone" width="360" height="300">
+                        <img srcset="./images/phone.jpg 1x, ./images/phone-2x.jpg 2x" src="./images/phone.jpg"
+                            alt="phone" width="360" height="300">
                     </li>
                 </ul>
             </div>
@@ -194,7 +197,8 @@
                 <h2 class="about-title">Our Team</h2>
                 <ul class="about-list list">
                     <li class="about-item ">
-                        <img src="./images1/mark-guerrero.jpg" alt="foto" width=100% height="260">
+                        <img srcset="./images1/mark-guerrero.jpg 1x, ./images1/mark-guerrero-2x.jpg 2x"
+                            src="./images1/mark-guerrero.jpg" alt="foto" width=100% height="260">
                         <div class="team-text">
                             <h3 class="about-title-top">Mark Guerrero</h3>
                             <p class="about-text">Product Designer</p>
@@ -231,7 +235,8 @@
                         </div>
                     </li>
                     <li class="about-item list">
-                        <img src="./images1/tom-ford.jpg" alt="foto" width=100% height="260">
+                        <img srcset="./images1/tom-ford.jpg 1x, ./images1/tom-ford-2x.jpg 2x"
+                            src="./images1/tom-ford.jpg" alt="foto" width=100% height="260">
                         <div class="team-text">
                             <h3 class="about-title-top">Tom Ford</h3>
                             <p class="about-text">Frontend Developer</p>
@@ -268,7 +273,8 @@
                         </div>
                     </li>
                     <li class="about-item list">
-                        <img src="./images1/camila-garcia.jpg" alt="foto" width=100% height="260">
+                        <img srcset="./images1/camila-garcia.jpg 1x, ./images1/camila-garcia-2x.jpg 2x"
+                            src="./images1/camila-garcia.jpg" alt="foto" width=100% height="260">
                         <div class="team-text">
                             <h3 class="about-title-top">Camila Garcia</h3>
                             <p class="about-text">Marketing</p>
@@ -306,7 +312,8 @@
                     </li>
 
                     <li class="about-item list">
-                        <img src="./images1/daniel-wilson.jpg" alt="foto" width="100%" height="260">
+                        <img srcset="./images1/daniel-wilson.jpg 1x, ./images1/daniel-wilson-2x.jpg 2x"
+                            src="./images1/daniel-wilson.jpg" alt="foto" width="100%" height="260">
                         <div class="team-text">
                             <h3 class="about-title-top">Daniel Wilson</h3>
                             <p class="about-text">UI Designer</p>
@@ -462,7 +469,7 @@
     </footer> -->
 
     <!-- BACKDROP MODAL -->
-    <!-- 
+
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
@@ -511,8 +518,9 @@
             </form>
         </div>
     </div>
+    <script src="./js/menu.js"></script>
 
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
 
 </body>
 
