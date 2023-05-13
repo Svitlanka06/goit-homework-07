@@ -14,6 +14,15 @@
     display: none;
   }
 }
+@media screen and (max-width: 430px) {
+  .mobile-link-tel {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #4d5ae5;
+  }
+}
 @media screen and (min-width: 480px) {
   .container {
     max-width: 426px;
@@ -21,6 +30,20 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .hero-title-top {
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+    max-width: 320px;
   }
   .container-team {
     width: 294px;
@@ -36,8 +59,15 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container.page-header-container {
+  /* .container.page-header-container {
     max-width: 768px;
+  } */
+  .description-container {
+    max-width: 766px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .page-header-container {
     display: flex;
@@ -127,24 +157,12 @@
         url(../images2/hero-bg-tab-2x.jpg);
     }
   }
-  .hero-title {
+
+  .hero-title-top {
     margin-bottom: 36px;
     max-width: 496px;
     font-size: 56px;
     line-height: 1.07;
-  }
-  .hero-title-top {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #ffffff;
-    max-width: 496px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .description-list {
     flex-direction: row;
@@ -177,7 +195,7 @@
     flex-basis: calc((100% - 48px) / 3);
   }
   .container {
-    max-width: 582px;
+    max-width: 766px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -189,6 +207,9 @@
   .description-title {
     text-align: left;
   }
+  .container-customers {
+    width: 582px;
+  }
 
   .customer-item {
     max-width: 168px;
@@ -196,6 +217,7 @@
     flex-basis: calc((100% - 24px) / 3);
   }
   .footer-container {
+    width: 582px;
     flex-direction: row;
     align-items: center;
     justify-content: start;
@@ -221,6 +243,7 @@
   }
   .online-input {
     width: 264px;
+    margin-bottom: 0;
   }
 }
 
@@ -279,6 +302,10 @@
         url(../images2/bg-2x.jpg);
     }
   }
+  .hero-title-top {
+    font-size: 56px;
+    margin-bottom: 48px;
+  }
   .container-team {
     width: 1200px;
   }
@@ -303,10 +330,24 @@
   }
   .description-title {
     text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .description-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    margin-top: 8px;
   }
   .about-item {
     flex-wrap: wrap;
     width: calc((100% - 3 * 24px) / 4);
+  }
+  .container-customers {
+    width: 1158px;
   }
   .customer-list {
     display: flex;
@@ -322,12 +363,16 @@
   .mobile-menu-open {
     display: none;
   }
+  .footer-container {
+    width: 1158px;
+  }
   .footer {
     padding-top: 100px;
     padding-bottom: 100px;
   }
   .logo-container {
     margin-right: 120px;
+    margin-bottom: 0;
   }
   .soc-footer {
     margin-right: 80px;
@@ -335,6 +380,9 @@
   }
   .subscribe {
     margin-right: auto;
+  }
+  .online-input {
+    margin-bottom: 0;
   }
   .footer-text {
     margin-bottom: 0;
